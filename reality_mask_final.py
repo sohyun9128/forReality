@@ -12,7 +12,7 @@ Original file is located at
 from IPython import display
 from PIL import Image
 
-# %tensorflow_version 1.x
+%tensorflow_version 1.x
 import tensorflow as tf
 import sys
 sys.path.insert(0, 'tpu/models/official')
