@@ -9,48 +9,6 @@ Original file is located at
 
 # Commented out IPython magic to ensure Python compatibility.
 
-from IPython import display
-from PIL import Image
-
-%tensorflow_version 1.x
-import tensorflow as tf
-import sys
-sys.path.insert(0, 'tpu/models/official')
-sys.path.insert(0, 'tpu/models/official/mask_rcnn')
-import coco_metric
-from mask_rcnn.object_detection import visualization_utils
-
-import cv2
-import os
-
-import numpy as np
-import pandas as pd
-import glob
-import natsort 
-import time
-import math
-
-import logging
-
-#######################################################################################
-
-
-# 캡쳐 이미지파일 저장할 경로
-imgs_path = '/content/imgs'  
-
-
-# 테스트 비디오 경로
-test_video_path = '/content/final_test.mp4'  
-
-
-# output file 저장 경로
-output_path = '/content/output'
-outputs_path = '/content/output/*.txt'
-
-
-# 최종 파일 경로 + 이름
-final_path = '/content/reality_data.txt'
-
 
 # gpu 사용
 use_gpu= True #@param {type:"boolean"}
